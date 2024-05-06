@@ -56,8 +56,7 @@ def get_response(temperature, system_prompt, user_query, turbo_history):
     llm = ChatOpenAI(
         model='gpt-4-turbo-2024-04-09',
         temperature=temperature,
-        streaming=True,
-        openai_api_base="https://api.gptsapi.net/v1"
+        streaming=True
     )
 
     chain = prompt | llm | StrOutputParser()
