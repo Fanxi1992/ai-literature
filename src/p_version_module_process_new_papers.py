@@ -81,7 +81,7 @@ def process_files(file_uploads, index_name):
         # get texts to encode
         texts = [x.page_content for x in meta_batch]
 
-        embeddings = OpenAIEmbeddings(model="text-embedding-3-large", openai_api_base="https://api.gptsapi.net/v1")
+        embeddings = OpenAIEmbeddings(model="text-embedding-3-large")
 
         max_attempts = 3
         attempt_count = 0
