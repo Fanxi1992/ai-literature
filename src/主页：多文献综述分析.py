@@ -50,8 +50,7 @@ def create_QA_chain():
     model = ChatOpenAI(
         model='gpt-4-turbo-2024-04-09',
         temperature=0.2,
-        streaming=True,
-        openai_api_base="https://api.gptsapi.net/v1"
+        streaming=True
     )
 
     full_template = """You are SF_bot, a highly skilled academic paper analysis assistant. You excel at summarizing and analyzing the content of research papers, extracting relevant key points, and providing comprehensive and rigorous answers. You are also proficient at writing literature reviews. You will make full use of the context information provided below to answer the user's questions, using the chat history as a reference. Your responses are always in Chinese.
