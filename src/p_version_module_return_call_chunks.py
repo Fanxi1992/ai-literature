@@ -14,7 +14,7 @@ pc = Pinecone()
 
 
 embed_model = "text-embedding-3-large"
-embeddings = OpenAIEmbeddings(model=embed_model, openai_api_base="https://api.gptsapi.net/v1")
+embeddings = OpenAIEmbeddings(model=embed_model)
 
 # 这是重排序的工具 Rerank3 用于对文档进行重新排序
 co = cohere.Client()
