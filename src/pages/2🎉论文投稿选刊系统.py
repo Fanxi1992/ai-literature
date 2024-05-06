@@ -37,7 +37,7 @@ pc = Pinecone()
 
 
 embed_model = "text-embedding-3-large"
-embeddings = OpenAIEmbeddings(model=embed_model, openai_api_base="https://api.gptsapi.net/v1")
+embeddings = OpenAIEmbeddings(model=embed_model)
 
 
 def is_valid_string(s):
